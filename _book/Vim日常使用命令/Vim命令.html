@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>插入命令 | Command</title>
+        <title>Vim命令 | Command</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.4.3">
@@ -29,8 +29,6 @@
         
     
     
-    <link rel="next" href="../Vim日常使用命令/查找命令.html" />
-    
     
     <link rel="prev" href="../index.html" />
     
@@ -40,7 +38,7 @@
     <body>
         
         
-    <div class="book" data-level="1" data-basepath=".." data-revision="Sat Oct 10 2015 18:51:30 GMT+0800 (CST)">
+    <div class="book" data-level="1" data-basepath=".." data-revision="Sun Oct 11 2015 13:53:45 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -71,121 +69,16 @@
             
         </li>
     
-        <li class="chapter active" data-level="1" data-path="Vim日常使用命令/插入命令.html">
+        <li class="chapter active" data-level="1" data-path="Vim日常使用命令/Vim命令.html">
             
                 
-                    <a href="../Vim日常使用命令/插入命令.html">
+                    <a href="../Vim日常使用命令/Vim命令.html">
                 
                         <i class="fa fa-check"></i>
                         
                             <b>1.</b>
                         
-                        插入命令
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="2" data-path="Vim日常使用命令/查找命令.html">
-            
-                
-                    <a href="../Vim日常使用命令/查找命令.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.</b>
-                        
-                        查找命令
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="3" data-path="Vim日常使用命令/移动命令.html">
-            
-                
-                    <a href="../Vim日常使用命令/移动命令.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>3.</b>
-                        
-                        移动命令
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="4" data-path="Vim日常使用命令/删除命令.html">
-            
-                
-                    <a href="../Vim日常使用命令/删除命令.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.</b>
-                        
-                        删除命令
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="5" data-path="Vim日常使用命令/拷贝和粘贴.html">
-            
-                
-                    <a href="../Vim日常使用命令/拷贝和粘贴.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>5.</b>
-                        
-                        拷贝和粘贴
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="6" data-path="Vim日常使用命令/文件命令.html">
-            
-                
-                    <a href="../Vim日常使用命令/文件命令.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>6.</b>
-                        
-                        文件命令
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="7" data-path="Vim日常使用命令/窗口命令.html">
-            
-                
-                    <a href="../Vim日常使用命令/窗口命令.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>7.</b>
-                        
-                        窗口命令
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="8" data-path="Vim日常使用命令/shell命令.html">
-            
-                
-                    <a href="../Vim日常使用命令/shell命令.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>8.</b>
-                        
-                        shell命令
+                        Vim命令
                     </a>
             
             
@@ -297,12 +190,27 @@
                 
                     <section class="normal" id="section-">
                     
-                        <p>i             &#x5728;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#x524D;&#x63D2;&#x5165;
-I             &#x5728;&#x5F53;&#x524D;&#x884C;&#x9996;&#x63D2;&#x5165;
-a            &#x5728;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#x540E;&#x63D2;&#x5165;
-A            &#x5728;&#x5F53;&#x524D;&#x884C;&#x5C3E;&#x63D2;&#x5165;
-o            &#x5728;&#x5F53;&#x524D;&#x884C;&#x4E4B;&#x540E;&#x63D2;&#x5165;&#x4E00;&#x884C;
-O            &#x5728;&#x5F53;&#x524D;&#x884C;&#x4E4B;&#x524D;&#x63D2;&#x5165;&#x4E00;&#x884C;</p>
+                        <p>&#x63D2;&#x5165;&#x547D;&#x4EE4;
+i            &#x3010;&#x5728;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#x524D;&#x63D2;&#x5165;&#x3011;
+I            &#x3010;&#x5728;&#x5F53;&#x524D;&#x884C;&#x9996;&#x63D2;&#x5165;&#x3011;
+a            &#x3010;&#x5728;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#x540E;&#x63D2;&#x5165;&#x3011;
+A            &#x3010;&#x5728;&#x5F53;&#x524D;&#x884C;&#x5C3E;&#x63D2;&#x5165;&#x3011;
+o            &#x3010;&#x5728;&#x5F53;&#x524D;&#x884C;&#x4E4B;&#x540E;&#x63D2;&#x5165;&#x4E00;&#x884C;&#x3011;
+O            &#x3010;&#x5728;&#x5F53;&#x524D;&#x884C;&#x4E4B;&#x524D;&#x63D2;&#x5165;&#x4E00;&#x884C;&#x3011;</p>
+<p>&#x67E5;&#x627E;&#x547D;&#x4EE4;
+/text        &#x3010;&#x67E5;&#x627E;text&#xFF0C;&#x6309;n&#x952E;&#x67E5;&#x627E;&#x4E0B;&#x4E00;&#x4E2A;&#xFF0C;&#x6309;N&#x952E;&#x67E5;&#x627E;&#x524D;&#x4E00;&#x4E2A;&#x3011;
+?text        &#x3010;&#x53CD;&#x5411;&#x67E5;&#x627E;text&#xFF0C;&#x6309;n&#x952E;&#x67E5;&#x627E;&#x4E0B;&#x4E00;&#x4E2A;&#xFF0C;&#x6309;N&#x952E;&#x67E5;&#x627E;&#x524D;&#x4E00;&#x4E2A;&#x3011;</p>
+<ul>
+<li>&#x3010;&#x5149;&#x6807;&#x653E;&#x5728;&#x8981;&#x67E5;&#x627E;&#x7684;&#x8BCD;&#x4E0A;&#xFF0C;&#x7136;&#x540E;&#x6309;*&#x952E;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8DF3;&#x5230;&#x8BE5;&#x8BCD;&#x51FA;&#x73B0;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;&#x3011;<h1 id="%E3%80%90%E5%85%89%E6%A0%87%E6%94%BE%E5%9C%A8%E8%A6%81%E6%9F%A5%E6%89%BE%E7%9A%84%E8%AF%8D%E4%B8%8A%EF%BC%8C%E7%84%B6%E5%90%8E%E6%8C%89-%E9%94%AE%E5%8F%AF%E4%BB%A5%E7%9B%B4%E6%8E%A5%E8%B7%B3%E5%88%B0%E8%AF%A5%E8%AF%8D%E5%87%BA%E7%8E%B0%E7%9A%84%E4%B8%8B%E4%B8%80%E4%B8%AA%E4%BD%8D%E7%BD%AE%E3%80%91">&#x3010;&#x5149;&#x6807;&#x653E;&#x5728;&#x8981;&#x67E5;&#x627E;&#x7684;&#x8BCD;&#x4E0A;&#xFF0C;&#x7136;&#x540E;&#x6309;*&#x952E;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8DF3;&#x5230;&#x8BE5;&#x8BCD;&#x51FA;&#x73B0;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;&#x3011;</h1>
+</li>
+</ul>
+<p>&#x79FB;&#x52A8;&#x547D;&#x4EE4;
+&#x5220;&#x9664;&#x547D;&#x4EE4;
+&#x64A4;&#x9500;&#x547D;&#x4EE4;
+&#x62F7;&#x8D1D;&#x548C;&#x7C98;&#x8D34;
+&#x6587;&#x4EF6;&#x547D;&#x4EE4;
+&#x7A97;&#x53E3;&#x547D;&#x4EE4;
+shell&#x547D;&#x4EE4;</p>
 
                     
                     </section>
@@ -313,10 +221,8 @@ O            &#x5728;&#x5F53;&#x524D;&#x884C;&#x4E4B;&#x524D;&#x63D2;&#x5165;&#x
         </div>
 
         
-        <a href="../index.html" class="navigation navigation-prev " aria-label="Previous page: Introduction"><i class="fa fa-angle-left"></i></a>
+        <a href="../index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Introduction"><i class="fa fa-angle-left"></i></a>
         
-        
-        <a href="../Vim日常使用命令/查找命令.html" class="navigation navigation-next " aria-label="Next page: 查找命令"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
