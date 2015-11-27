@@ -61,3 +61,6 @@
 
 ##其他
 
+	git push origin :beta				//删除远程分支beta
+	git push -f <SHA> beta				//回滚代码到某个(SHA)提交，慎用
+
