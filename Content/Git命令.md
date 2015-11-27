@@ -59,3 +59,5 @@
 	6、git push origin dev    ﻿    ﻿【git push --force origin dev】这是因为使用rebase以后，分支历史改变了，跟远程分支不一定兼容，有可能需要强行推送
 
 
+##其他
+
