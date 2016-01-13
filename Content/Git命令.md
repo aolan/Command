@@ -63,6 +63,6 @@
 
 	git push origin :beta				//删除远程分支beta
 	git push -f <SHA> beta				//回滚代码到某个(SHA)提交，慎用
-	git commit --amend				//修改上次提交的描述
+	git commit --amend			       	//修改上次提交的描述
 	git rebase -i HEAD~2				//合并最近两次提交，然后把需要合并到另一个commit中的commit前的pick改为s或者squash
 
