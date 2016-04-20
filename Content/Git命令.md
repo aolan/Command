@@ -61,7 +61,7 @@
 ##Git标签使用
 	git tag -a v1.0.0 -m 'Release Version 1.0.0'    // 打标签
 	git tag 					// 查看标签
-	git push origin -tags				// 推送标签到远程仓库
+	git push origin --tags				// 推送标签到远程仓库
 	git tag -d v1.0.0				// 删除标签
 	git push origin :refs/tags/v1.0.0		// 删除远程仓库标签
 
