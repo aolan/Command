@@ -58,6 +58,12 @@
 	5、git rebase origin/master    【git rebase -i origin/master 可以合并之前的多次提交】
 	6、git push origin dev    ﻿    ﻿【git push --force origin dev】这是因为使用rebase以后，分支历史改变了，跟远程分支不一定兼容，有可能需要强行推送
 
+##Git标签使用
+	git tag -a v1.0.0 -m 'Release Version 1.0.0'    // 打标签
+	git tag 					// 查看标签
+	git push origin -tags				// 推送标签到远程仓库
+	git tag -d v1.0.0				// 删除标签
+	git push origin :refs/tags/v1.0.0		// 删除远程仓库标签
 
 ##其他
 
