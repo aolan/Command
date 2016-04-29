@@ -65,8 +65,17 @@
 	git tag -d v1.0.0				// 删除标签
 	git push origin :refs/tags/v1.0.0		// 删除远程仓库标签
 
-##其他
+##远程代码回滚
+	git checkout the_branch
+	git pull origin the_branch
+	git branch -b the_branch_backup 		// 备份一下当前的分支
+	git reset --head the_commit_id 
+	git branch the_branch_backup 			// 备份一下这个分支当前的情况
+	git push origin :the_branch 			// 删除远程分支the_branch
+	git push origin the_branch 			// 用回滚后的本地分支重新建立远程分支
+	git branch -d the_branch_backup			// 删除本地备份分支［如果前面的操作都成功的话］
 
+##其他
 	git push origin :beta				//删除远程分支beta
 	git push -f <SHA> beta				//回滚代码到某个(SHA)提交，慎用
 	git commit --amend			       	//修改上次提交的描述
