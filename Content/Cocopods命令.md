@@ -31,7 +31,7 @@
 8.提交更新到私有库
 
 	// 本地验证
-        pod lib lint 
+	pod lib lint 
         // 创建tag
 	git tag -a 0.0.3 -m '描述' 
 	git push origin --tags
