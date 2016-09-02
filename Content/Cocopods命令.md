@@ -32,12 +32,21 @@
 
 	// 本地验证
 	pod lib lint 
-        // 创建tag
+	
+	// 创建tag
 	git tag -a 0.0.3 -m '描述' 
 	git push origin --tags
+	
 	// 验证远程库
 	pod spec lint 
+	
 	// 提交到私有Specs上
 	pod repo push PrivateSpecs PrivateCommon.podspec
+	
 	// 使用者从服务端更新本地Specs
 	pod repo update PrivateSpecs
+
+9.Cocoapods打包静态库，如果此次打包的tag和上次一样，需要清除本地缓存
+
+	pod cache clean --all
+	pod cache list
