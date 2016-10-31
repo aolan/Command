@@ -75,6 +75,11 @@
 	git push origin the_branch 			// 用回滚后的本地分支重新建立远程分支
 	git branch -d the_branch_backup			// 删除本地备份分支［如果前面的操作都成功的话］
 
+## 迁移仓库
+	git clone --bare git://github.com/username/project.git	// 从原地址克隆一份裸版本库，比如原本托管于 GitHub。
+	cd project.git
+	git push --mirror git@gitcafe.com/username/newproject.git // 以镜像推送的方式上传代码到 GitCafe 服务器上。
+
 ##其他
 	git push origin :beta				//删除远程分支beta
 	git push -f <SHA> beta				//回滚代码到某个(SHA)提交，慎用
