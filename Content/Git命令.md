@@ -74,6 +74,19 @@
 	git push origin :the_branch 			// 删除远程分支the_branch
 	git push origin the_branch 			// 用回滚后的本地分支重新建立远程分支
 	git branch -d the_branch_backup			// 删除本地备份分支［如果前面的操作都成功的话］
+	
+##创建分支发起merge request
+	git checkout dev
+	git checkout -b fix_bug
+	
+	// 修改代码后
+	git add .
+	git commit -m 'fix bug'
+	git push origin fix_bug
+	
+	// 服务端merge之后，删除本地分支
+	git branch -D fix_bug
+	git branch -d -r origin/fix_bug
 
 ## 迁移仓库
 	git clone --bare git://github.com/username/project.git	// 从原地址克隆一份裸版本库，比如原本托管于 GitHub。
