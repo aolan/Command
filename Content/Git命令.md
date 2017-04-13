@@ -89,14 +89,22 @@
 	git branch -d -r origin/fix_bug
 
 ## 迁移仓库
+	
 	git clone --bare git://github.com/username/project.git	// 从原地址克隆一份裸版本库，比如原本托管于 GitHub。
+
 	cd project.git
+	
 	git push --mirror git@gitcafe.com/username/newproject.git // 以镜像推送的方式上传代码到 GitCafe 服务器上。
 
-##其他
+## 其他
 	git push origin :beta				//删除远程分支beta
+	
 	git push -f <SHA> beta				//回滚代码到某个(SHA)提交，慎用
+	
 	git commit --amend			       	//修改上次提交的描述
+	
 	git rebase -i HEAD~2				//合并最近两次提交，然后把需要合并到另一个commit中的commit前的pick改为s或者squash
+	
 	git log -n 1 -p 				//查看最近一次提交所有更改的细节
+	
 	git log -n 1 --stat				//查看最近一次提交所有更改过的文件
