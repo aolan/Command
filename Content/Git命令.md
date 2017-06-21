@@ -59,6 +59,7 @@
 	6、git push origin dev    ﻿    ﻿【git push --force origin dev】这是因为使用rebase以后，分支历史改变了，跟远程分支不一定兼容，有可能需要强行推送
 
 ##Git标签使用
+
 	git tag -a v1.0.0 -m 'Release Version 1.0.0'    // 打标签
 	git tag 					// 查看标签
 	git push origin --tags				// 推送标签到远程仓库
@@ -76,6 +77,7 @@
 	git branch -d the_branch_backup			// 删除本地备份分支［如果前面的操作都成功的话］
 	
 ##创建分支发起merge request
+
 	git checkout dev
 	git checkout -b fix_bug
 	
