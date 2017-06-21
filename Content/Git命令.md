@@ -31,21 +31,21 @@
 
 ##创建新分支
 
-	git checkout master							//切换到master分支
-	git pull									//更新最新的master分支
-	git branch <new-local-branch-name>			//以master分支为基点创建本地分支
-	git checkout <new-local-branch-name>		//切换到本地新分支
-	git push origin <new-local-branch-name>		//推送到远程
+	git checkout master				// 切换到master分支
+	git pull					// 更新最新的master分支
+	git branch <new-local-branch-name>		// 以master分支为基点创建本地分支
+	git checkout <new-local-branch-name>		// 切换到本地新分支
+	git push origin <new-local-branch-name>		// 推送到远程
 	
 	
 	
 ##合并个人开发分支到主开发分支
 
-	git branch -D beta                            //删除本地分支
-	git fetch                                     //同步远程分支       
-	git checkout -b beta origin/beta              //重新创建本地分支
+	git branch -D beta                            // 删除本地分支
+	git fetch                                     // 同步远程分支       
+	git checkout -b beta origin/beta              // 重新创建本地分支
 	git pull origin beta					
-	git merge orgin/lawn_dev                      //将远程lawn_dev分支合并到本地beta分支
+	git merge orgin/lawn_dev                      // 将远程lawn_dev分支合并到本地beta分支
 	git push
 
 
@@ -56,7 +56,7 @@
 	3、git commit --verbose
 	4、git fetch
 	5、git rebase origin/master    【git rebase -i origin/master 可以合并之前的多次提交】
-	6、git push origin dev    ﻿    ﻿【git push --force origin dev】这是因为使用rebase以后，分支历史改变了，跟远程分支不一定兼容，有可能需要强行推送
+	6、git push origin dev         【git push --force origin dev】这是因为使用rebase以后，分支历史改变了，跟远程分支不一定兼容，有可能需要强行推送
 
 ##Git标签使用
 
@@ -67,6 +67,7 @@
 	git push origin :refs/tags/v1.0.0		// 删除远程仓库标签
 
 ##远程代码回滚
+
 	git checkout the_branch
 	git pull origin the_branch
 	git branch -b the_branch_backup 		// 备份一下当前的分支
@@ -99,14 +100,16 @@
 	git push --mirror git@gitcafe.com/username/newproject.git // 以镜像推送的方式上传代码到 GitCafe 服务器上。
 
 ## 其他
-	git push origin :beta				//删除远程分支beta
+	git push origin :beta				// 删除远程分支beta
 	
-	git push -f <SHA> beta				//回滚代码到某个(SHA)提交，慎用
+	git push -f <SHA> beta				// 回滚代码到某个(SHA)提交，慎用
 	
-	git commit --amend			       	//修改上次提交的描述
+	git commit --amend			       	// 修改上次提交的描述
 	
-	git rebase -i HEAD~2				//合并最近两次提交，然后把需要合并到另一个commit中的commit前的pick改为s或者squash
+	git rebase -i HEAD~2				// 合并最近两次提交，然后把需要合并到另一个commit中的commit前的pick改为s或者squash
 	
-	git log -n 1 -p 				//查看最近一次提交所有更改的细节
+	git log -n 1 -p 				// 查看最近一次提交所有更改的细节
 	
-	git log -n 1 --stat				//查看最近一次提交所有更改过的文件
+	git log -n 1 --stat				// 查看最近一次提交所有更改过的文件
+	
+	git pull --rebase origin dev		  	// 多人在dev分支开发时，拉代码最好使用git pull --rebase，这样就不会出现merge记录
