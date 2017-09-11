@@ -1,6 +1,6 @@
-#Git日常使用场景
+# Git日常使用场景
 
-##Git配置
+## Git配置
 
 ***
 
@@ -19,7 +19,7 @@
 	ssh -T git@"你的gitlab服务器地址"
 
 
-##上传本地代码到github
+## 上传本地代码到github
 
 	1、先到github上创建一个仓库
 	2、cd到工程目录下
@@ -29,7 +29,7 @@
 	6、git commit -m 'first commit'
 	7、git push origin master
 
-##创建新分支
+## 创建新分支
 
 	git checkout master				// 切换到master分支
 	git pull					// 更新最新的master分支
@@ -39,7 +39,7 @@
 	
 	
 	
-##合并个人开发分支到主开发分支
+## 合并个人开发分支到主开发分支
 
 	git branch -D beta                            // 删除本地分支
 	git fetch                                     // 同步远程分支       
@@ -49,7 +49,7 @@
 	git push
 
 
-##日常提交代码
+## 日常提交代码
 
 	1、git add .
 	2、git status
@@ -58,7 +58,7 @@
 	5、git rebase origin/master    【git rebase -i origin/master 可以合并之前的多次提交】
 	6、git push origin dev         【git push --force origin dev】这是因为使用rebase以后，分支历史改变了，跟远程分支不一定兼容，有可能需要强行推送
 
-##Git标签使用
+## Git标签使用
 
 	git tag -a v1.0.0 -m 'Release Version 1.0.0'    // 打标签
 	git tag 					// 查看标签
@@ -66,7 +66,7 @@
 	git tag -d v1.0.0				// 删除标签
 	git push origin :refs/tags/v1.0.0		// 删除远程仓库标签
 
-##远程代码回滚
+## 远程代码回滚
 
 	git checkout the_branch
 	git pull origin the_branch
@@ -77,7 +77,7 @@
 	git push origin the_branch 			// 用回滚后的本地分支重新建立远程分支
 	git branch -d the_branch_backup			// 删除本地备份分支［如果前面的操作都成功的话］
 	
-##创建分支发起merge request
+## 创建分支发起merge request
 
 	git checkout dev
 	git checkout -b fix_bug
