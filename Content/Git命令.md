@@ -116,3 +116,11 @@
 	git log -n 1 --stat				// 查看最近一次提交所有更改过的文件
 	
 	git pull --rebase origin dev		  	// 多人在dev分支开发时，拉代码最好使用git pull --rebase，这样就不会出现merge记录
+
+
+## 文件太大
+
+   如果文件太大，导致git push 不上去，显示出 git push error: RPC failed; result=56, HTTP code = 0 [closed] 错误，建议修改Git's HTTP Buffer 
+   
+   ``` git config --global http.postBuffer 2M ```
+
