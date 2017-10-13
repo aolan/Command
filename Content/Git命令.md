@@ -2,21 +2,24 @@
 
 ## Git配置
 
-***
 
-1.生成密钥对
+1. 生成密钥对
 
-	ssh-keygen -t rsa -C "你的邮箱"
+	```ssh-keygen -t rsa -C "你的邮箱"```
 
-2.去~/.ssh目录下找id_rsa.pub文件
+2. 去~/.ssh目录下找id_rsa.pub文件
 
-	 pbcopy < id_rsa.pub
+	 ```pbcopy < id_rsa.pub```
 
-3.把拷贝到剪切版的公钥粘贴到公司gitlab网站
+3. 把拷贝到剪切版的公钥粘贴到公司gitlab网站
 
-4.测试是否可用  
+4. 在~/.ssh目录下执行，将专用密钥添加到 ssh-agent 的高速缓存中
+	
+	```ssh-add id_rsa```
+
+5.测试是否可用  
   
-	ssh -T git@"你的gitlab服务器地址"
+	``` ssh -T git@"你的gitlab服务器地址" ```
 
 
 ## 上传本地代码到github
