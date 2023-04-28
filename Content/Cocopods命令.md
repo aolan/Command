@@ -1,4 +1,4 @@
-#Cocoapods日常使用
+# Cocoapods日常使用
 1.安装Cocoapods工具
 
 	gem install cocoapods
@@ -50,3 +50,11 @@
 
 	pod cache clean --all
 	pod cache list
+	
+	
+# 第一次安装 cocoapods 很慢
+
+`pod repo add master https://github.com/CocoaPods/Specs.git` 很慢，那么该如何解决呢？
+
+1、直接下载压缩包
+2、然后执行 `pod setup`
