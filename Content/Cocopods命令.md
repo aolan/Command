@@ -56,5 +56,6 @@
 
 `pod repo add master https://github.com/CocoaPods/Specs.git` 很慢，那么该如何解决呢？
 
-1、直接下载压缩包
-2、然后执行 `pod setup`
+* 1、直接下载压缩包
+
+* 2、然后执行 `pod setup`
